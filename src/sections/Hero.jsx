@@ -60,30 +60,24 @@ export const Hero = () => {
                             </span>
                         </div>
                         {/*headline */}
-                        <div className="space-y-4">
-                            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100 ">
-                                Crafting <span className="text-primary glow-text">digital</span>
-                                <br />
-                                expriences with
-                                <br />
-                                <span className="font-serif italic font-normal text-white">
-                                    precision.
-                                </span>
-                            </h1>
-                            <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-800">
-                                Hi I'm Betelhem Mekonnen -A Software Engineer specializing in
+                        <div className="space-y-44">
+                         
+                            <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-800 mt-28">
+                                Hi I'm <span className="text-primary">Betelhem Mekonnen</span> -A Software Engineer specializing in
                                 React,Next.js,Vue and TypeScript.I Build beautiful and functional digital experiences
                                 through code and creativity.
                             </p>
                         </div>
-                        <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
+                        <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300 mt-48">
                             <Button href="#contact" size="lg">
                                 Contact Me <ArrowRight className="w-5 h-5" />
                             </Button>
+                            <a href="/Betelhem-Mekonnen-CV.pdf" download="Betelhem-Mekonnen-CV.pdf" target="_blank" rel="noopener noreferrer" className="inline-block">
                             <AnimatedBorderButton>
                                 <Download className="w-5 h-5" />
                                 Download CV
                             </AnimatedBorderButton>
+                            </a>
                         </div>
                     </div>
 

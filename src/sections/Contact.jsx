@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/Button";
 import { useState } from "react";
-
+import emailjs from "@emailjs/browser";
 
 const contactInfo = [
   {
@@ -76,11 +76,11 @@ export const Contact = () => {
       });
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
-      console.error("EmailJS error:", error);
+      console.error("EmailJS error:", err);
       setSubmitStatus({
         type: "error",
         message:
-          error.text || "Failed to send message. Please try again later.",
+          err.text || "Failed to send message. Please try again later.",
       });
     } finally {
       setIsLoading(false);
@@ -137,12 +137,13 @@ export const Contact = () => {
               <div>
                 <label
                   htmlFor="email"
-                  type="email"
                   className="block text-sm font-medium mb-2"
                 >
                   Email
                 </label>
                 <input
+                  id="email"
+                  type="email"
                   required
                   placeholder="your@email.com"
                   value={formData.email}

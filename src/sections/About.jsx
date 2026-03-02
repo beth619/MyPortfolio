@@ -40,21 +40,16 @@ export const About = () => {
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
-              Building the future,
+               A front end developer
               <span className="font-serif italic font-normal text-white">
                 {" "}
-                one component at a time.
+              Building beautiful and user-centered designs
               </span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
-              <p>
-              A front end developer
-    Building beautiful and functional digital experiences
-    through code and creativity.
-    Passionate about user-centered designs
-    Creating seamless, responsive web solutions
-              </p>
+            
+         
               <p>
                 I specialize in React,vue and nuxt.
                I'm constantly learning new technologies and methodologies to stay
