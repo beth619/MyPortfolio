@@ -26,6 +26,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    min-height: 100vh;
   }
 
   button {
@@ -36,10 +37,44 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
   }
 
   .font-serif {
     font-family: "Playfair Display", serif;
+  }
+
+  /* Prevent stretching on mobile */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Ensure consistent layout */
+  section {
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  /* Container fixes */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  /* Grid fixes */
+  .grid {
+    max-width: 100%;
+  }
+
+  /* Responsive text */
+  @media (max-width: 768px) {
+    html {
+      font-size: 16px;
+    }
   }
 }
 
