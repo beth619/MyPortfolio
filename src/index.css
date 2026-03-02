@@ -61,13 +61,26 @@
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     width: 100%;
+    position: relative;
   }
 
   /* Grid fixes */
   .grid {
     max-width: 100%;
+  }
+
+  /* Text centering fixes */
+  .text-center {
+    text-align: center;
+  }
+
+  /* Content wrapper fixes */
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
   }
 
   /* Responsive text */

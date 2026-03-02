@@ -49,7 +49,7 @@ export const Hero = () => {
             </div>
 
             {/* content */}
-            <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+            <div className="max-w-7xl mx-auto px-6 pt-32 pb-20 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Left Column - Text Content */}
                     <div className="space-y-8">
@@ -62,13 +62,13 @@ export const Hero = () => {
                         {/*headline */}
                         <div className="space-y-44">
                          
-                            <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-800 mt-28">
+                            <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in animation-delay-800 mt-28 text-center">
                                 Hi I'm <span className="text-primary">Betelhem Mekonnen</span> -A Software Engineer specializing in
                                 React,Next.js,Vue and TypeScript.I Build beautiful and functional digital experiences
                                 through code and creativity.
                             </p>
                         </div>
-                        <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300 mt-48">
+                        <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300 mt-48 justify-center">
                             <Button href="#contact" size="lg">
                                 Contact Me <ArrowRight className="w-5 h-5" />
                             </Button>
