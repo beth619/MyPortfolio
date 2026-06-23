@@ -20,13 +20,13 @@ const projects = [
         github: "https://github.com/beth619/Weather-app.git",
     },
     {
-        title: "Tic-Tac-Toe-Game",
+        title: "TRMS",
         description:
-            "A modern Tic-Tac-Toe game built with React and styled with Tailwind CSS. Features a beautiful blue-themed UI with smooth animations, game history tracking, and responsive design.",
-        image: "/projects/Tictactoe.png",
-        tags: ["React", "TailWind CSS"],
-        link: "https://tictactoegame-ashen.vercel.app/",
-        github: "https://github.com/beth619/Tic-Tac-Toe-Game.git",
+            "Tigray Resilient Referral Management System — a clinical referral coordination platform built for the Tigray Regional Health Bureau. Features 24/7 referral coordination, unified patient transfer logs, and emergency escalation hotline integration.",
+        image: "/projects/trms.png",
+        tags: ["React", "Node.js", "PostgreSQL"],
+        link: "http://trrms.vercel.app",
+        github: "#",
     },
     {
         title: "chatbot",

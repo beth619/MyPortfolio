@@ -32,7 +32,7 @@ export const Navbar = () => {
           href="#"
           className="text-xl font-bold tracking-tight hover:text-primary"
         >
-          PM<span className="text-primary">.</span>
+          BM<span className="text-primary">.</span>
         </a>
 
         {/* Desktop Nav */}
@@ -50,10 +50,7 @@ export const Navbar = () => {
           </div>
         </div>
 
-        {/* CTA Button */}
-        <div className="hidden md:block">
-          <Button href="#contact" size="sm">Contact Me</Button>
-        </div>
+
 
         {/* Mobile Menu Button */}
         <button
@@ -79,9 +76,7 @@ export const Navbar = () => {
               </a>
             ))}
 
-            <Button href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
-              Contact Me
-            </Button>
+
           </div>
         </div>
       )}
