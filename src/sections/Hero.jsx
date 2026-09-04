@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { TechStrip } from '@/components/TechStrip';
 
 // ── Config ────────────────────────────────────────────────────────
-const HERO_VIDEO_SRC = '/videos/hero.mp4.mp4';
+const HERO_VIDEO_SRC = '/videos/hero2.mp4';
 
 export const Hero = () => {
     const [visible, setVisible]   = useState(false);
@@ -12,6 +12,11 @@ export const Hero = () => {
     useEffect(() => {
         const mobileQuery = window.matchMedia('(max-width: 767px)');
         setIsMobile(mobileQuery.matches);
+
+        if (videoRef.current) {
+            videoRef.current.playbackRate = 0.6;
+        }
+
         // Small delay so video has a frame to paint before fading text in
         const t = setTimeout(() => setVisible(true), 200);
         return () => clearTimeout(t);
@@ -41,7 +46,7 @@ export const Hero = () => {
                         autoPlay muted loop playsInline
                         preload="metadata"
                         aria-hidden="true"
-                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                        style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(1.15)' }}
                     />
                 ) : (
                     <img
@@ -57,7 +62,7 @@ export const Hero = () => {
                     style={{
                         position:   'absolute',
                         inset:      0,
-                        background: 'linear-gradient(135deg, rgba(4,10,14,0.82) 0%, rgba(4,10,14,0.55) 55%, rgba(4,10,14,0.78) 100%)',
+                        background: 'linear-gradient(135deg, rgba(4,10,14,0.55) 0%, rgba(4,10,14,0.35) 55%, rgba(4,10,14,0.55) 100%)',
                     }}
                 />
             </div>
