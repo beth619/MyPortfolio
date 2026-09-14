@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { TechStrip } from '@/components/TechStrip';
 
 // ── Config ────────────────────────────────────────────────────────
-const HERO_VIDEO_SRC = '/videos/hero2.mp4';
+const HERO_VIDEO_SRC = '/videos/hero.mp4';
 
 export const Hero = () => {
     const [visible, setVisible] = useState(false);
@@ -84,7 +84,7 @@ export const Hero = () => {
                     <p
                         style={{
                             maxWidth: '38rem',
-                            fontSize: 'clamp(1rem, 1.2vw, 1.15rem)',
+                            fontSize: 'clamp(1.2rem, 1.8vw, 1.5rem)',
                             color: '#ffffff',
                             lineHeight: '1.85',
                             fontWeight: 300,
@@ -95,7 +95,8 @@ export const Hero = () => {
                             transition: 'opacity 0.9s ease 0.3s, transform 0.9s ease 0.3s',
                         }}
                     >
-                        A full stack developer ,enjoy building projects from React frontends to Node/Express backends backed by PostgreSQL or Supabase
+                        Full-stack developer who enjoys building end-to-end projects — from React frontends to Node/Express backends backed by PostgreSQL or Supabase.
+                        
                     </p>
                 </div>
             </div>
