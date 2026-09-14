@@ -22,7 +22,7 @@ const projects = [
         github: "#",
     },
     {
-        title: "SunFinity Firm",
+        title: "Book-site",
         description:
             "SunFinity Firm is a content and publishing platform for founders and leaders, offering books, long-form essays, courses, and a tiered membership. It features a filterable book shop with direct and Amazon purchase options, a searchable resource library, personalized dashboards, and an editorial content hub — designed with accessibility, dark/light theming, and MENA/RTL-conscious UX in mind.",
         image: "/image.png",
