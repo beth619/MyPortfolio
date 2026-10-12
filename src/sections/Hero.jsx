@@ -67,36 +67,34 @@ export const Hero = () => {
                 />
             </div>
 
-            {/* ── Lorem ipsum paragraph — sole text element ──────────── */}
+            {/* ── Hero paragraph — positioned close to the bottom above TechStrip ── */}
             <div
                 style={{
                     position: 'relative',
                     zIndex: 10,
                     minHeight: '100vh',
                     display: 'flex',
-                    alignItems: 'center',
+                    alignItems: 'flex-end',
                     justifyContent: 'center',
-                    paddingTop: '9rem',
-                    paddingBottom: '1.5rem',
+                    paddingTop: '6rem',
+                    paddingBottom: '6.5rem',
                 }}
             >
                 <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full flex justify-center">
                     <p
                         style={{
-                            maxWidth: '38rem',
-                            fontSize: 'clamp(1.2rem, 1.8vw, 1.5rem)',
+                            maxWidth: '36rem',
+                            fontSize: 'clamp(0.95rem, 1.3vw, 1.15rem)',
                             color: '#ffffff',
-                            lineHeight: '1.85',
+                            lineHeight: '1.75',
                             fontWeight: 300,
                             textAlign: 'center',
-                            marginTop: '5rem',
                             opacity: visible ? 1 : 0,
                             transform: visible ? 'translateY(0)' : 'translateY(20px)',
                             transition: 'opacity 0.9s ease 0.3s, transform 0.9s ease 0.3s',
                         }}
                     >
                         Full-stack developer — from React frontends to Node/Express backends backed by PostgreSQL or Supabase.
-
                     </p>
                 </div>
             </div>
