@@ -95,8 +95,8 @@ export const Hero = () => {
                             transition: 'opacity 0.9s ease 0.3s, transform 0.9s ease 0.3s',
                         }}
                     >
-                        Full-stack developer who enjoys building end-to-end projects — from React frontends to Node/Express backends backed by PostgreSQL or Supabase.
-                        
+                        Full-stack developer — from React frontends to Node/Express backends backed by PostgreSQL or Supabase.
+
                     </p>
                 </div>
             </div>
